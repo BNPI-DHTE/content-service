@@ -85,8 +85,9 @@ jobs:
               uses: actions/setup-java@v1
               with:
                   java-version: 17
-#            - name       
-#              run: ./mvnw -B -ntp clean package -DskipTests=true
+
+            - name: Run maven warpper       
+              run: ./mvnw -B -ntp clean package -DskipTests=true
 
             - name: Perform CodeQL Analysis
               uses: github/codeql-action/analyze@v2
