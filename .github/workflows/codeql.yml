@@ -85,7 +85,8 @@ jobs:
               uses: actions/setup-java@v1
               with:
                   java-version: 17
-              run: ./mvnw -B -ntp clean package -DskipTests=true
+#            - name       
+#              run: ./mvnw -B -ntp clean package -DskipTests=true
 
             - name: Perform CodeQL Analysis
               uses: github/codeql-action/analyze@v2
